@@ -14,7 +14,7 @@ public class j2c{
 	public static void main(String[] args) throws IOException{
 		compileC();
 		try{
-			Thread.sleep(1000);
+			Thread.sleep(1000);	//1 second delay
 		}catch(Exception e){
 			System.out.println(e);
 		}
