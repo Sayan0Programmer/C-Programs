@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+int main(){
+	int s;	//status
+	s=system("javac hello.java");
+	s=system("java hello");
+	printf("\n\nPress any key to terminate: ");
+	getchar();
+	printf("Removing created files");
+	s=system("rm hello.class");
+	printf("Thank You...\n\n");
+	return 0;
+}
